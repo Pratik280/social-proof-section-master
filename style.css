@@ -1,0 +1,75 @@
+/*
+- Font size: 15px
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700
+ */
+
+:root{
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  font-size: 62.5%;
+  --fs-700: clamp(3.5rem, 5vw, 5rem);
+  --fs-500: clamp(1.5rem, 2vw, 1.65rem);
+  --fs-400: clamp(1.5rem, 1.75vw, 1.75rem);
+
+  font-family: 'Spartan', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: var(--fs-400);
+}
+
+h1{
+  color: var(--very-dark-magenta);
+  line-height: 1;
+  font-weight: 700;
+  font-size: var(--fs-700);
+}
+
+header p{
+  color: var(--dark-grayish-magenta);
+  font-weight: 500;
+  font-size: var(--fs-500);
+}
+
+.reviews p{
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  font-size: var(--fs-500);
+}
+
+.card{
+  background: var(--very-dark-magenta);
+}
+
+.testimonials h2{
+  color: var(--white);
+  font-weight: 700;
+  font-size: var(--fs-500);
+}
+
+.testimonials h3{
+  color: var(--soft-pink);
+  font-weight: 500;
+  font-size: var(--fs-500);
+}
+
+.testimonials p{
+  color: var(--white);
+}
+
