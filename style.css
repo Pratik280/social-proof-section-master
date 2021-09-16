@@ -1,8 +1,4 @@
-/*
-- Font size: 15px
-- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
-- Weights: 400, 500, 700
- */
+/* ==== CUSTOM PROPERTIES ==== */
 
 :root{
   --very-dark-magenta: hsl(300, 43%, 22%);
@@ -15,10 +11,12 @@
   font-size: 62.5%;
   --fs-700: clamp(3.5rem, 5vw, 5rem);
   --fs-500: clamp(1.5rem, 2vw, 1.65rem);
-  --fs-400: clamp(1.5rem, 1.75vw, 1.75rem);
+  --fs-400: clamp(1.4rem, 1.75vw, 1.75rem);
 
   font-family: 'Spartan', sans-serif;
 }
+
+/* ==== DEFAULT STYLES ==== */
 
 *,
 *::before,
@@ -27,6 +25,34 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+img {
+  /* display: block; */
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+.container{
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+main,
+header,
+header p,
+section {
+  padding: 1.5rem 0;
+  @media (min-width: 40em) {
+    main,
+    header,
+    header p,
+    section {
+      padding: 7rem 0;
+    }
+  }
+}
+
+/* ==== TYPOGRAPHY ==== */
 
 body{
   line-height: 1.6;
@@ -53,10 +79,6 @@ header p{
   font-size: var(--fs-500);
 }
 
-.card{
-  background: var(--very-dark-magenta);
-}
-
 .testimonials h2{
   color: var(--white);
   font-weight: 700;
@@ -73,3 +95,53 @@ header p{
   color: var(--white);
 }
 
+/* ==== STYLING HEADER ==== */
+
+header{
+  text-align: center;
+}
+
+/* ==== STYLING REVIEW-CARDS ==== */
+
+.reviews-cards{
+  text-align: center;
+  background: var(--light-grayish-magenta);
+  border-radius: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.reviews-cards > *{
+  padding: 0.5rem;
+}
+
+/* ==== STYLING TESTIMONIALS ==== */
+
+.card{
+  background: var(--very-dark-magenta);
+  border-radius: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.card img{
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
+}
+
+.profile-wrapper{
+  display: inline-block;
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+
+.card p{
+  padding: 3rem;
+}
+
+/* ==== STYLING FOOTER ==== */
+
+footer{
+  text-align: center;
+}
